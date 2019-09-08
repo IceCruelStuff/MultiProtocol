@@ -13,7 +13,7 @@ use pocketmine\plugin\PluginBase;
 /**
  * Class MultiProtocol
  * @package multiprotocol
- * @author VixikCZ
+ * 
  */
 class MultiProtocol extends PluginBase implements Listener {
 
