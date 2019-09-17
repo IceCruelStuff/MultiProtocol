@@ -2,5 +2,6 @@ name: MultiProtocol
 api: [3.0.1, 3.9.0, 4.0.0]
 version: 1.0.0
 main: multiprotocol\MultiProtocol
-description: Allows to join players with other version
+description: Allows players with different versions to join.
+website: https://github.com/IceCruelStuff/MultiProtocol
 load:
