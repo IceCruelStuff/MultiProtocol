@@ -1,2 +1,2 @@
 # MultiProtocol
-An advanced allows different client versions to connect
+An advanced plugin that allows different client versions to connect to your PocketMine-MP server.
