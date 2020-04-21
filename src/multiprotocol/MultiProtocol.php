@@ -34,7 +34,7 @@ class MultiProtocol extends PluginBase implements Listener {
         $currentProtocol = ProtocolInfo::CURRENT_PROTOCOL;
         if ($pk->protocol < $currentProtocol) {
             $pk->protocol = $currentProtocol;
-            $this->getLogger()->alert("§6{$player->getName()}'s protocol changed to {$currentProtocol}!")
+            $this->getLogger()->alert("§6{$player->getName()}'s protocol changed to {$currentProtocol}!");
         } elseif ($pk->protocol > $currentProtocol) {
             $pk->protocol = $currentProtocol;
             $this->getLogger()->alert("§6{$player->getName()}'s protocol changed to {$currentProtocol}!");
