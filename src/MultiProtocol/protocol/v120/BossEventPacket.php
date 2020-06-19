@@ -3,7 +3,7 @@
 namespace MultiProtocol\protocol\v120;
 
 use pocketmine\network\mcpe\protocol\DataPacket;
-use MultiProtocol\Info;
+use MultiProtocol\protocol\Info;
 
 class BossEventPacket extends DataPacket {
 
