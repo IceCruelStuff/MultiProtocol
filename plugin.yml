@@ -1,7 +1,7 @@
 name: MultiProtocol
 api: 3.0.0, 4.0.0
 version: 1.2
-main: multiprotocol\MultiProtocol
+main: MultiProtocol\MultiProtocol
 description: Allows players with different versions to join.
 website: https://github.com/IceCruelStuff/MultiProtocol
 load: STARTUP
