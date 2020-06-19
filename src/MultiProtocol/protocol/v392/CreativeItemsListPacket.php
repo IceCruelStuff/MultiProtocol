@@ -3,11 +3,11 @@
 namespace MultiProtocol\protocol\v392
 
 use pocketmine\network\mcpe\protocol\DataPacket;
-use MultiProtocol\Info;
+use MultiProtocol\protocol\Info;
 
 class CreativeItemsListPacket extends DataPacket {
 
-    const NETWORK_ID = Info::CREATIVE_ITEMS_LIST_PACKET;
+    public const NETWORK_ID = Info::CREATIVE_ITEMS_LIST_PACKET;
 
     public $groups;
     public $items;
