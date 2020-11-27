@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace multiprotocol;
+namespace MultiProtocol;
 
 use pocketmine\event\Listener;
 use pocketmine\event\server\DataPacketReceiveEvent;
@@ -25,7 +25,7 @@ class MultiProtocol extends PluginBase implements Listener {
     /**
      * @param DataPacketReceiveEvent $event
      */
-    public function onLogin(DataPacketReceiveEvent $event) {
+    /*public function onLogin(DataPacketReceiveEvent $event) {
         $pk = $event->getPacket();
         if (!$pk instanceof LoginPacket) {
             return;
@@ -38,6 +38,6 @@ class MultiProtocol extends PluginBase implements Listener {
             $pk->protocol = $currentProtocol;
             $this->getLogger()->alert(TextFormat::GOLD . $player->getName() . "'s protocol changed to " . $currentProtocol);
         }
-    }
+    }*/
 
 }
