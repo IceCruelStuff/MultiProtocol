@@ -62,5 +62,8 @@ class Info extends ProtocolInfo {
     public const PROTOCOL_389 = 389; // 1.14.x.x
     public const PROTOCOL_390 = 390; // 1.14.60
     public const PROTOCOL_392 = 392; // 1.15.0.51
+    public const PROTOCOL_407 = 407; // unknown
+    public const PROTOCOL_408 = 408; // unknown
+    public const PROTOCOL_419 = 419; // unknown
 
 }
