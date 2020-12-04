@@ -1,6 +1,6 @@
 <?php
 
-namespace MultiProtocol\Protocol;
+namespace MultiProtocol\Network\Protocol;
 
 use pocketmine\network\mcpe\protocol\ProtocolInfo;
 
