@@ -6,9 +6,10 @@ use pocketmine\network\mcpe\protocol\ProtocolInfo;
 
 class Info extends ProtocolInfo {
 
-    const CURRENT_PROTOCOL = 137;
-    const ACCEPTED_PROTOCOLS = [137, 261, 274, 282, 291, 313, 332, 340, 354, 361, 388, 389, 390, 407, 408, 419];
+    const CURRENT_PROTOCOL = 120;
+    const ACCEPTED_PROTOCOLS = [120, 137, 261, 274, 282, 291, 313, 332, 340, 354, 361, 388, 389, 390, 407, 408, 419];
 
+    const PROTOCOL_120 = 120; // ??
     const PROTOCOL_137 = 137; // 1.2.0
     const PROTOCOL_261 = 261; // 1.4.0
     const PROTOCOL_274 = 274; // 1.5.0
