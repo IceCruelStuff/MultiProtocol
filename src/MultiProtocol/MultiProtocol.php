@@ -18,26 +18,23 @@ use pocketmine\utils\TextFormat;
  */
 class MultiProtocol extends PluginBase implements Listener {
 
+    private $players = [];
+
     public function onEnable() {
         $this->getServer()->getPluginManager()->registerEvents($this, $this);
     }
 
-    /**
-     * @param DataPacketReceiveEvent $event
-     */
-    /*public function onLogin(DataPacketReceiveEvent $event) {
-        $pk = $event->getPacket();
-        if (!$pk instanceof LoginPacket) {
-            return;
-        }
+    public function onDataPacketReveive(DataPacketReceiveEvent $event) {
+        $packet = $event->getPacket();
         $player = $event->getPlayer();
-        $currentProtocol = ProtocolInfo::CURRENT_PROTOCOL;
-        if ($pk->protocol < $currentProtocol) {
-            $player->kick(TextFormat::RED . 'Your protocol version needs to be same or above ' . $currentProtocol);
-        } elseif ($pk->protocol > $currentProtocol) {
-            $pk->protocol = $currentProtocol;
-            $this->getLogger()->alert(TextFormat::GOLD . $player->getName() . "'s protocol changed to " . $currentProtocol);
+        if (!in_array($player->getName(), $this->players)) {
+            if ($packet instanceof LoginPacket) {
+                switch ($packet->protocol) {
+                    default:
+                        break;
+                }
+            }
         }
-    }*/
+    }
 
 }
