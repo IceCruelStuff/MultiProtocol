@@ -10,6 +10,7 @@ use pocketmine\network\mcpe\protocol\LoginPacket;
 use pocketmine\network\mcpe\protocol\ProtocolInfo;
 use pocketmine\plugin\PluginBase;
 use pocketmine\utils\TextFormat;
+use MultiProtocol\Network\Protocol\Info;
 
 /**
  * Class MultiProtocol
@@ -26,8 +27,8 @@ class MultiProtocol extends PluginBase implements Listener {
     }
 
     public function checkProtocol() {
-        if (ProtocolInfo::CURRENT_PROTOCOL < 137) {
-            $this->getServer()->getLogger("Protocol versions under 137 are not supported");
+        if (ProtocolInfo::CURRENT_PROTOCOL < Info::CURRENT_PROTOCOL) {
+            $this->getServer()->getLogger("Protocol versions under " . Info::CURRENT_PROTOCOL . " are not supported");
         }
     }
 
