@@ -21,7 +21,14 @@ class MultiProtocol extends PluginBase implements Listener {
     private $players = [];
 
     public function onEnable() {
+        $this->checkProtocol();
         $this->getServer()->getPluginManager()->registerEvents($this, $this);
+    }
+
+    public function checkProtocol() {
+        if (ProtocolInfo::CURRENT_PROTOCOL < 137) {
+            $this->getServer()->getLogger("Protocol versions under 137 are not supported");
+        }
     }
 
     public function onDataPacketReveive(DataPacketReceiveEvent $event) {
