@@ -25,7 +25,7 @@ class MultiProtocol extends PluginBase implements Listener {
     public function onEnable() {
         $this->checkProtocol();
         $this->getServer()->getPluginManager()->registerEvents($this, $this);
-        $index = array_search(Info::ACCEPTED_PROTOCOLS, Info::CURRENT_PROTOCOL) + 1;
+        $index = array_search(Info::ACCEPTED_PROTOCOLS, ProtocolInfo::CURRENT_PROTOCOL) + 1;
         self::$acceptedProtocols = array_slice(Info::ACCEPTED_PROTOCOLS, $index);
     }
 
